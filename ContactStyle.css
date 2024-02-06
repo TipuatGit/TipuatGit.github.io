@@ -154,6 +154,23 @@ label {
 	height: 100px;
 }
 
+.submit-button {
+	margin-top: 30px;
+	width: 80px;
+	background-color: #46c768;
+	padding: 10px 10px;
+	font-family: 'Bruno Ace', sans-serif;
+	font-size: 16px;
+	border: none;
+}
+
+.submit-button:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+}
+
 #fname, #lname, #email, #phnum {
 	height: 30px;
 	width: 250px;
