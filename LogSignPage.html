@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset = "UTF-8"> <!-- These things like charset in the opening tags are known as attributes-->
+        <meta name = "Description:" content = "Autoline | Sign In">
+        <title>
+            AutoLine Showroom | Home Page
+        </title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--To allow for boxicons on Signing forms-->
+        <link rel="icon" href="images/favicon.png">
+        <!--including the link to the external css stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+        <link href = "LoginStyle.css", rel = "stylesheet">
+        <script src = "script.js"></script>
+        
+    </head>
+
+
+    <body>
+
+
+        <header>
+            <div id = "headingPart">
+                <nav class = "headerSection">
+                    
+                    <div id = "leftHeaderSection">
+                        <img src = "images/LogoGreen.png" width = 300px alt = "logo"/> 
+                    </div> 
+
+                    <div id = "rightHeaderSection">
+                        <button id = "butt1" type="button" onclick=openNewPage(1)>Home</button>
+                        <button id = "butt2" type="button" onclick=openNewPage(2)>View Catalog</button>
+                        <button id = "butt4" type="button" onclick=openNewPage(4)>Contact & About</button>
+                    </div>
+
+                </nav>
+            </div>
+
+            <div class = "mainContainer">
+
+                <div class = LogInImageandForm>
+
+                    <div class = leftImage>
+                        <img src = "images/leaves.png">
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class = signingForm>
+
+                        <section class = "tabs"> <!-- this is there to be a container for the signing form grid-> -->
+                            <div class = "container"> <!--This is the grid for the 2 buttons for the grid, sign in and sign up-->
+
+                                <BUTTON class = "link tab-item tab-border">
+                                        <!--<i class="fa-solid fa-clipboard" style="color: #46c768;"></i>-->
+                                        <i class="fa-solid fa-right-to-bracket fa-2xl"></i>
+                                        <p class="hide-sm">Log In</p>
+                                </BUTTON>
+
+                                <BUTTON class = "link tab-item tab-border">
+                                        <i class="fa-solid fa-clipboard fa-2xl"></i>
+                                        <p class="hide-sm">Sign Up</p>
+                                </BUTTON>
+                                <!--NOTE: you can also use variables for colors eg: -->
+
+                            </div>
+                        </section>
+
+                        <section class = "tabContent forms">
+
+                            <div class = "form login">
+                                <div class = "formContent">
+
+                                    <form action = "#"> <!--LOGIN FORM-->
+                                        <div class = "field input-field" id ="topMostField">
+                                            <input type = "email" placeholder = "example@xyz.com" class = "input">
+                                        </div>
+                                        <div class = "field input-field">
+                                                <input type = "password" placeholder = "password" class = "password">
+                                                <!--todo: add eye icon to toggle show and not show-->
+                                        </div>
+                                        <div class = "form-link">
+                                            <a href = "#" class = "forgot-pass">Forgot Password?</a>
+                                        </div>
+                                        <div class = "field button-field">
+                                            <button>Login</button>
+                                        </div>
+                                        
+                                    </form>
+                                
+                                <div class = "form-link">
+                                    <span>Not a member yet? <a href = "#" class = "link signupLink">Signup</a>
+                                </div>
+
+                                </div>
+
+                                <div class = "line"></div>
+
+                                <div class = "media-options">
+                                    <a href = "#" class = "field facebook">
+                                        <i class = "bx bxl-facebook facebook-icon"></i>
+                                        <span>Login with Facebook</span>
+                                    </a>
+                                    
+                                    <a href = "#" class = "field google">
+                                        <i class = "bx bxl-google google-icon"></i>
+                                        <span>Login with Google</span>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class = "form signup">
+                                <div class = "formContent">
+
+                                    <form action = "#"> <!--SIGNUP FORM-->
+                                        <div class = "field input-field" id ="topMostField">
+                                            <input type = "email" placeholder = "example@xyz.com" class = "input">
+                                        </div>
+                                        <div class = "field input-field">
+                                                <input type = "password" placeholder = "password" class = "password">
+                                                <!--todo: add eye icon to toggle show and not show-->
+                                        </div>
+                                        <div class = "field input-field">
+                                            <input type = "password" placeholder = "password" class = "password">
+                                            <!--todo: add eye icon to toggle show and not show-->
+                                        </div>
+                                        <div class = "form-link">
+                                            <a href = "#" class = "forgot-pass">Forgot Password?</a>
+                                        </div>
+                                        <div class = "field button-field">
+                                            <button>Sign Up</button>
+                                        </div>
+                                        
+                                    </form>
+                                
+                                <div class = "form-link">
+                                    <span>Already a member? <a href = "#" class = "link loginLink">Log In</a>
+                                </div>
+
+                                </div>
+
+                                <div class = "line"></div>
+
+                                <div class = "media-options signupMedia">
+                                    <a href = "#" class = "field facebook">
+                                        <i class = "bx bxl-facebook facebook-icon"></i>
+                                        <span>Sign up with Facebook</span>
+                                    </a>
+                                    
+                                    <a href = "#" class = "field google">
+                                        <i class = "bx bxl-google google-icon"></i>
+                                        <span>Sign up with Google</span>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!--Scripting-->
+                        <script src = "scriptSignup.js"></script>
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </header>
+
+
+        <main>
+
+
+        </main>
+ 
+
+        <footer>
+            <div class = "footerContent">
+                <div class='information'>
+				
+					<p> <img class='footer-img' src='images/phone.png' width=24> Phone Number: 03233475015</p>
+					
+					<p> <img class='footer-img' src='images/location.png' width=24> Address: B-4/5, Jail Chowrangi, Karachi.</p>
+				</div>
+				
+				<div class='socials'>
+					<a href='www.facebook.com' style="text-decoration:none">
+						<img src='images/fb.png' style='filter: invert(100%);' width=32 title="AutoLine's facebook page">
+					</a>
+					
+					<a href='www.x.com' style="text-decoration:none">
+						<img src='images/x.png' style='filter: invert(100%);' width=32 title="AutoLine's twitter account" >
+					</a>
+					
+					<a href='www.instagram.com' style="text-decoration:none">
+						<img src='images/insta.png' style='filter: invert(100%);' width=32 title="AutoLine's instagram page">
+					</a>
+				</div>
+				
+				<div class='copyright'>
+					<h1>AutoLine</h1>
+					<span id = "cRight">©</span> Copyrights of AutoLine 2024. All Rights Reserved.
+				</div>
+            </div>
+        </footer>
+
+
+    </body>
+
+
+</html>
