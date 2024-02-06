@@ -86,6 +86,10 @@ body{
 }
 
 /*here*/
+.landingHeading {
+	margin-bottom: 100px;
+}
+
 .landingHeading h1 {
 	color: #595555;
     text-align: center;
@@ -95,6 +99,7 @@ body{
 
 .main-form-section {
 	display: flex;
+	margin-bottom: 100px;
 }
 
 .main-form-section img {
@@ -191,6 +196,8 @@ span {
     display:flex;
     justify-content: center;
     width:100vw;
+	margin-bottom: 100px;
+	background-color: #eee;
 }
 
 .aboutContainer{
