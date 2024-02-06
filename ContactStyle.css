@@ -156,7 +156,8 @@ label {
 
 .submit-button {
 	margin-top: 30px;
-	width: 80px;
+	margin-left: 10px;
+	width: 150px;
 	background-color: #46c768;
 	padding: 10px 10px;
 	font-family: 'Bruno Ace', sans-serif;
@@ -167,8 +168,6 @@ label {
 .submit-button:hover {
   background-color: #04AA6D;
   color: white;
-}
-
 }
 
 #fname, #lname, #email, #phnum {
